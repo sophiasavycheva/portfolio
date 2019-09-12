@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    background: #171314;
+    font-family: inherit;
+}
+html {
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.search, .lang {
+    position: absolute;
+    right: 0;
+}
+
+.search {
+    top: 0;
+}
+.lang {
+    bottom: 0;
+}
+
+.page {
+    display: flex;
+}
+
+.aside {
+    width: 220px;
+    background: #3A3637;
+}
+
+.main {
+    flex-grow: 1;
+    max-width: calc(100% - 200px);
+}
+
+.counter {
+    color: #3A3637;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    /* text-shadow:
+			-0.5px -0.5px 0 #fff,
+			0.5px -0.5px 0 #fff,
+			-0.5px 0.5px 0 #fff,
+            0.5px 0.5px 0 #fff; */
+    -webkit-text-fill-color: #3A3637; /* цвет текста для webkit */
+    -webkit-text-stroke: 0.5px white;
+}
+
+/* Шрифты*/
+.offer-text{
+    display: block;
+    padding-top: 100px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 46px;
+    color: #FFFFFF;
+    } 
+.main-text{
+    display: block;
+    padding-top: 180px;
+    padding-left: 400px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    }
+
+.about-name{
+    display: block;
+    margin-left: 400px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 90px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
+.about-surname{
+    display: block;
+    margin-left: 600px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 90px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
+.about-designer{
+    display: block;
+    margin-left: 800px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 100px;
+    color: #FFFFFF;
+
+}
+.services-item{
+    display: block;    
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 100px;
+    color: #FFFFFF;
+
+}
+.services-text{
+    display: block;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.blog-text{
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.blog-upper{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.menu{
+    display: block;
+    margin-top: 200px;
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.menu-style{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.btn{
+    margin-left:600px;
+    background: transparent;
+    border: none;
+    font-family: Montserrat;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.icon{
+    width: 155px;
+    height: 155px;
+}
+.services-block{
+    display: inline-block;
+    width: max-content;
+    margin-left: 20px;
+    text-align: center;
+}
