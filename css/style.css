@@ -176,3 +176,53 @@ html {
     margin-left: 20px;
     text-align: center;
 }
+
+.screen {
+    position: relative;
+}
+
+.mainScreen {
+    pointer-events: none;
+}
+
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.particle__circle,
+.particle__triangle,
+.particle__line {
+    position: absolute;
+}
+
+.particle__line {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+}
+
+.particle__line--mainOne {
+    left: 424px;
+    top: 104px;
+    transform: rotate(54.37deg);
+}
+
+.particle__line--mainTwo {
+    left: 424px;
+    top: 340px;
+    transform: rotate(54.37deg);
+}
+
+.particle__circle--main {
+    right: 31px;
+    top: 302px;
+}
+
+.particle__triangle--main {
+    top: 468px;
+    right: 0;
+    /* transform: rotate(-27.62deg); */
+}
