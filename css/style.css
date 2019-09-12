@@ -3,12 +3,14 @@ body {
     background: #171314;
     font-family: inherit;
 }
+
 html {
     font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-.search, .lang {
+.search,
+.lang {
     position: absolute;
     right: 0;
 }
@@ -16,6 +18,7 @@ html {
 .search {
     top: 0;
 }
+
 .lang {
     bottom: 0;
 }
@@ -27,6 +30,9 @@ html {
 .aside {
     width: 220px;
     background: #3A3637;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .main {
@@ -44,12 +50,13 @@ html {
 			0.5px -0.5px 0 #fff,
 			-0.5px 0.5px 0 #fff,
             0.5px 0.5px 0 #fff; */
-    -webkit-text-fill-color: #3A3637; /* цвет текста для webkit */
+    -webkit-text-fill-color: #3A3637;
+    /* цвет текста для webkit */
     -webkit-text-stroke: 0.5px white;
 }
 
 /* Шрифты*/
-.offer-text{
+.offer-text {
     display: block;
     padding-top: 100px;
     text-align: center;
@@ -58,8 +65,9 @@ html {
     font-size: 50px;
     line-height: 46px;
     color: #FFFFFF;
-    } 
-.main-text{
+}
+
+.main-text {
     display: block;
     padding-top: 180px;
     padding-left: 400px;
@@ -68,9 +76,9 @@ html {
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
-    }
+}
 
-.about-name{
+.about-name {
     display: block;
     margin-left: 400px;
     font-family: Montserrat;
@@ -78,8 +86,9 @@ html {
     font-size: 90px;
     text-transform: uppercase;
     color: #FFFFFF;
-    }
-.about-surname{
+}
+
+.about-surname {
     display: block;
     margin-left: 600px;
     font-family: Montserrat;
@@ -87,8 +96,9 @@ html {
     font-size: 90px;
     text-transform: uppercase;
     color: #FFFFFF;
-    }
-.about-designer{
+}
+
+.about-designer {
     display: block;
     margin-left: 800px;
     font-family: Montserrat;
@@ -98,8 +108,9 @@ html {
     color: #FFFFFF;
 
 }
-.services-item{
-    display: block;    
+
+.services-item {
+    display: block;
     font-family: Montserrat;
     font-weight: bold;
     font-size: 30px;
@@ -107,38 +118,45 @@ html {
     color: #FFFFFF;
 
 }
-.services-text{
+
+.services-text {
     display: block;
     font-family: Montserrat;
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
 }
-.blog-text{
+
+.blog-text {
     font-family: Montserrat;
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
 }
-.blog-upper{
+
+.blog-upper {
     text-transform: uppercase;
     font-weight: bold;
 }
 
 
-.menu{
-    display: block;
-    margin-top: 200px;
+.menu {
+    display: flex;
+    align-items: center;
+    /* margin-top: 200px; */
     font-family: Montserrat;
     font-size: 16px;
     color: #FFFFFF;
+    flex-grow: 1;
 }
-.menu-style{
+
+.menu-style {
     text-decoration: none;
     color: #FFFFFF;
 }
-.btn{
-    margin-left:600px;
+
+.btn {
+    margin-left: 600px;
     background: transparent;
     border: none;
     font-family: Montserrat;
@@ -146,11 +164,13 @@ html {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.icon{
+
+.icon {
     width: 155px;
     height: 155px;
 }
-.services-block{
+
+.services-block {
     display: inline-block;
     width: max-content;
     margin-left: 20px;
