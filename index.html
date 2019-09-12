@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/fullpage.js@3.0.7/fullpage.min.css">
+    <link rel="stylesheet" href="./plugins/swiper@4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="search">search</div>
+        <div class="lang">ru|en</div>
+        <aside class="aside">
+            <div class="logo">logo</div>
+            <div class="menu">  
+                <nav>
+                <ul>
+                    <li><a class="menu-style" href="">Главная</a></li>
+                    <li><a class="menu-style" href="">Обо мне</a></li>
+                    <li><a class="menu-style" href="">Услуги</a></li>
+                    <li><a class="menu-style" href="">Портфолио</a></li>
+                    <li><a class="menu-style" href="">Блог</a></li>
+                    <li><a class="menu-style" href="">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+            <div class="counter">01</div>
+        </aside>
+       
+        <main id="fullPage" class="main">
+            <div class="screen section">
+                <span class="offer-text">Готов заказать дизайн, который<br>
+                не только работает, но и радует глаз?</span>
+                 <span class="main-text">Знание о вашем деле и мой опыт в UI/UX, позволит создать<br>
+                аксимально эффективный сайт </span>
+                <button class="btn">заказать дизайн
+                <hr>
+                </button>
+            </div>
+            <div class="screen section">
+                <span class="about-name">София</span>
+                <span class="about-surname">Савичева</span>
+                <span class="about-designer">UI/UX дизайнер</span>
+                <div class="aboutSlider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+                            perspiciatis?</div>
+                        <div class="swiper-slide">Eum expedita aliquam sed sapiente repudiandae aliquid excepturi?
+                            Excepturi, sequi.</div>
+                        <div class="swiper-slide">Porro quibusdam nam unde nulla minus debitis reiciendis optio earum?
+                        </div>
+                        <div class="swiper-slide">Animi voluptates non similique aliquid pariatur dolores ad recusandae
+                            est!</div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="screen section">
+                <div class="services-block">
+                    <img class="icon" src="img/web-design.svg" alt="icon-web">
+                <span class="services-item">UI/UX дизайн</span>
+                <span class="services-text">Проектирование интерфейса<br>
+                с привликательным внешним видом<br>
+                и удобным использованием</span>
+                </div>
+                <div class="services-block">
+                    <img class="icon" src="img/vector.svg" alt="icon-web">
+                <span class="services-item">2D графика</span>
+                <span class="services-text">Разработка фирменного стиля,<br>
+                дизайн полиграфической продукции<br>
+                и широкоформатной печати </span>
+                </div>
+                <div class="services-block">
+                    <img class="icon" src="img/creativity.svg" alt="icon-web">
+                <span class="services-item">Редизайн</span>
+                <span class="services-text">Обновление внешнего вида<br>
+                продукта  для достижения желаемого<br>
+                воздействия на его целевую аудиторию</span>
+                </div>
+            </div>
+            <div class="screen section active ">
+                <h1>Ipsam, ad accusamus.</h1>
+                <div class="portfolio">
+                    <div class="button-group filter-button-group">
+                        <button data-filter=".web">web</button>
+                        <button data-filter=".2d">2d</button>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-item 2d"><img src="https://via.placeholder.com/500x450" alt=""></div>
+                        <div class="grid-item 2d"><img src="https://via.placeholder.com/500x450" alt=""></div>
+                        <div class="grid-item 2d"><img src="https://via.placeholder.com/500x450" alt=""></div>
+                        <div class="grid-item 2d"><img src="https://via.placeholder.com/500x450" alt=""></div>
+                        <div class="grid-item web"><img src="https://via.placeholder.com/450x450" alt=""></div>
+                        <div class="grid-item web"><img src="https://via.placeholder.com/450x450" alt=""></div>
+                        <div class="grid-item web"><img src="https://via.placeholder.com/450x450" alt=""></div>
+                        <div class="grid-item web"><img src="https://via.placeholder.com/450x450" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="screen section">
+                <p class="blog-text"><span class="blog-upper">ведение блога</span> - это мой способ следить за трендами и тенденциями в сфере дизайна.<br> 
+                Анализируя определенную тему, я формирую собственное мнение, которым делюсь здесь.</p>
+                <div class="blogSlider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+                            perspiciatis?</div>
+                        <div class="swiper-slide">Eum expedita aliquam sed sapiente repudiandae aliquid excepturi?
+                            Excepturi, sequi.</div>
+                        <div class="swiper-slide">Porro quibusdam nam unde nulla minus debitis reiciendis optio earum?
+                        </div>
+                        <div class="swiper-slide">Animi voluptates non similique aliquid pariatur dolores ad recusandae
+                            est!</div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="screen section">
+                <h1>Ullam, voluptatem nostrum?</h1>
+            </div>
+        </main>
+    </div>
+
+    <script src="./plugins/jquery-3.4.1.min.js"></script>
+    <script src="./plugins/fullPage@2.9.7/jQuery.fullPage.js"></script>
+    <!-- <script src="./plugins/fullpage.js@3.0.7/fullpage.min.js"></script>
+    <script src="./plugins/fullpage.js@3.0.7/fullpage.extensions.min.js"></script> -->
+    <script src="./plugins/isotope-layout@3.0.6/isotope.pkgd.min.js"></script>
+    <script src="./plugins/swiper@4.5.0/js/swiper.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
