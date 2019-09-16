@@ -4,6 +4,7 @@
 @import "base";
 
 // TODO: include third-party styles
+@import "../../node_modules/swiper/src/swiper.scss";
 
 @import "../blocks/common/page/page.scss";
 
@@ -17,3 +18,4 @@
 @import "../blocks/input/input.scss";
 @import "../blocks/main/main.scss";
 @import "../blocks/button/button.scss";
+@import "../blocks/about/about.scss";

@@ -18,9 +18,24 @@ block page
                 .main__title!= data.main.title
                 .main__subtitle!= data.main.subtitle
                 .main__button
-                    a.button.button__large(href=NULL)= data.main.button
+                    a.button.button__large(href="#item_5")= data.main.button
                         +icon("arrow_right")
-        .section.about about
+        .section.about
+            //- img(src="./img/1@x1.png", alt="", srcset="1@x2.png 2x").about__bg
+            .about__particles.particles
+                .particles__front
+                .particles__back
+            .about__text
+                .about__title!= data.about.title
+                .about__subtitle= data.about.subtitle
+                .about__slider
+                    .about__swiper.swiper-container
+                        .swiper-wrapper
+                            each item in data.about.slider
+                                .swiper-slide.about__slide= item.text
+                        .swiper-pagination
+                        .swiper-button-prev
+                        .swiper-button-next
         .section.services services
         .section.portfolio portfolio
         .section.blog blog

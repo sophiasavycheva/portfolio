@@ -7,6 +7,7 @@ import {
     throttle
 } from '../../../js/util/index';
 import * as LazyLoader from '../../../js/util/lazy-loader';
+import * as about from '../../about/about';
 
 // TODO: import other blocks
 
@@ -63,9 +64,10 @@ export function initBlock() {
         anchors: ['item_0', 'item_1', 'item_2', 'item_3', 'item_4', 'item_5'],
         menu: '.nav__list',
         onLeave: function(origin, destination, direction) {
-            console.log(origin.index);
+            $('.counter').text(`0${destination}`);
         }
     });
+    about.initBlock();
 
     // Process the initial window size and scroll position
     handleWindowResize();
