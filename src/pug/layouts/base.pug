@@ -1,0 +1,47 @@
+- var NULL = "javascript:void(0)"
+include ../../blocks/common/icon/icon.pug
+//- TODO: include common block templates
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        if data.pageTitle
+            title #{data.pageTitle} | #{data.siteTitle}
+        else
+            title #{data.siteTitle} &#8211; #{data.siteTagline}
+
+        link(rel="stylesheet", href="css/style.css")
+    body.page
+        .logo
+            a.logo__link(href=NULL)
+                +icon("logo")
+        .lang
+            ul.lang__list
+                li.lang__item
+                    a.lang__link(href=NULL) en
+                li.lang__item
+                    a.lang__link(href=NULL) ru
+        .counter 01
+        .search
+            form.search__form(action="")
+                input.input.search__input(type="text", placeholder=data.search)
+        aside.aside
+            nav.nav.aside__nav
+                button.nav__burger
+                ul.nav__list
+                    each item, index in data.nav
+                        if index!=0
+                            li(data-menuanchor=`item_${index}`).nav__item
+                                a.nav__link(href=`#item_${index}`)= item
+                        else
+                            li(data-menuanchor=`item_${index}`).nav__item.nav__item--active
+                                a.nav__link(href=`#item_${index}`)= item
+        block page
+
+        block scripts
+            script(src="js/vendor.js")
+            script(src="js/main.js")

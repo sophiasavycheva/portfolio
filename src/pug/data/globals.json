@@ -1,0 +1,13 @@
+{
+    "siteTitle": "Site Title",
+    "siteTagline": "Site Tagline",
+    "nav": [
+        "Главная",
+        "Обо мне",
+        "Услуги",
+        "Портфолио",
+        "Блог",
+        "Контакты"
+    ],
+    "search": "поиск"
+}

@@ -1,0 +1,28 @@
+extends ../layouts/base.pug
+
+//- TODO: include page-specific block templates
+
+block page
+    //- TODO: add code
+    .page__fullpage#fullPage
+        .section.main
+            img(src="./img/1@x1.png", alt="", srcset="1@x2.png 2x").main__bg
+            .main__particles.particles
+                .particles__front
+                    +icon("screen1_circle").main__circle
+                    +icon("screen1_triangle").main__triangle
+                .particles__back
+                    .main__line1
+                    .main__line2
+            .main__text
+                .main__title!= data.main.title
+                .main__subtitle!= data.main.subtitle
+                .main__button
+                    a.button.button__large(href=NULL)= data.main.button
+                        +icon("arrow_right")
+        .section.about about
+        .section.services services
+        .section.portfolio portfolio
+        .section.blog blog
+        .section.contact contact
+        

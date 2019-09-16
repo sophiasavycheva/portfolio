@@ -1,0 +1,36 @@
+/**
+ * Styles for the page block
+ */
+.page {
+    // Selector styles
+    font-family: $font-family-sans-serif;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-base;
+    display: flex;
+    background-color: #171314;
+    color: #fff;
+    max-height: 100vh;
+    overflow: hidden;
+
+    &__fullpage {
+        min-height: 100vh;
+        flex-grow: 1;
+    }
+
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // BEM elements
+    &__container {
+        @include container();
+    }
+
+    // BEM modifiers
+    // TODO: add code
+}

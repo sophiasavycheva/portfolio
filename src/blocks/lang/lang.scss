@@ -1,0 +1,51 @@
+/**
+ * Styles for the lang block.
+ */
+.lang {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        padding: 0 5px;
+
+        &:nth-child(odd) {
+            border-right: 1px solid #fff;
+        }
+    }
+
+    &__link {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    // Selector styles
+    // TODO: add code
+
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+
+    // BEM modifiers
+    // TODO: add code
+}

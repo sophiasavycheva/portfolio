@@ -1,0 +1,116 @@
+/**
+ * Styles for the main block.
+ */
+.main {
+    position: relative;
+    // Selector styles
+    // TODO: add code
+
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+
+    // BEM modifiers
+    // TODO: add code
+    &__text {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 175px 0;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 46px;
+        /* or 92% */
+
+        text-align: center;
+
+        color: #FFFFFF;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        /* or 137% */
+
+
+        color: #FFFFFF;
+        text-align: center;
+        padding-left: 330px;
+        padding-top: 120px;
+    }
+
+    &__button {
+        text-align: center;
+        padding-left: 370px;
+    }
+
+    &__line1,
+    &__line2 {
+        position: absolute;
+        width: 100%;
+    }
+
+    &__line1 {
+        width: 100vh;
+        height: 0px;
+        right: -192px;
+        top: 0;
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transform: rotate(54.37deg);
+    }
+
+    &__line2 {
+        width: 100vh;
+        height: 0px;
+        right: -193px;
+        top: 367px;
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transform: rotate(54.37deg);
+    }
+
+    &__circle,
+    &__triangle {
+        color: #FF6677;
+        position: absolute;
+        z-index: 1;
+    }
+
+    &__circle {
+        width: 28px;
+        height: 28px;
+        right: 31px;
+        top: 285px;
+    }
+
+    &__triangle {
+        width: 140px;
+        height: 140px;
+        right: 44px;
+        top: 476px;
+    }
+
+    &__bg {
+        position: absolute;
+        left: -70px;
+        top: 190px;
+        max-width: 1100px;
+    }
+}
