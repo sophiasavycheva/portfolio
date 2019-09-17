@@ -63,8 +63,11 @@ export function initBlock() {
         responsiveWidth: 900,
         anchors: ['item_0', 'item_1', 'item_2', 'item_3', 'item_4', 'item_5'],
         menu: '.nav__list',
-        onLeave: function(origin, destination, direction) {
-            $('.counter').text(`0${destination}`);
+        onLeave: function(destination, nextIndex, direction) {
+            $('.counter').text(`0${nextIndex}`);
+        },
+        afterLoad: function(anchorLink, index) {
+            $('.counter').text(`0${index}`);
         }
     });
     about.initBlock();
