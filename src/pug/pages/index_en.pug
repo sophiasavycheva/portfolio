@@ -1,0 +1,94 @@
+extends ../layouts/base.pug
+
+//- TODO: include page-specific block templates
+
+block page
+    //- TODO: add code
+    .page__fullpage#fullPage
+        .section.main
+            img(src="./img/1@x1.png", alt="", srcset="1@x2.png 2x").main__bg
+            .main__particles.particles
+                .particles__front
+                    +icon("screen1_circle").main__circle
+                    +icon("screen1_triangle").main__triangle
+                .particles__back
+                    .main__line1
+                    .main__line2
+            .main__text
+                .main__title!= data.main.title
+                .main__subtitle!= data.main.subtitle
+                .main__button
+                    a.button.button__large(href="#item_5")= data.main.button
+                        +icon("arrow_right")
+        .section.about
+            //- img(src="./img/1@x1.png", alt="", srcset="1@x2.png 2x").about__bg
+            .about__particles.particles
+                .particles__front
+                .particles__back
+            .about__text
+                .about__title!= data.about.title
+                .about__subtitle= data.about.subtitle
+                .about__slider
+                    .about__swiper.swiper-container
+                        .swiper-wrapper
+                            each item in data.about.slider
+                                .swiper-slide.about__slide= item.text
+                        .swiper-pagination
+                        .swiper-button-prev
+                        .swiper-button-next
+        .section.services
+            //- img(src="./img/1@x1.png", alt="", srcset="1@x2.png 2x").services__bg
+            .services__particles.particles
+                .particles__front
+                .particles__back
+            .services__text
+                .row
+                    each item in data.services
+                        .col-4
+                            .services__icon
+                                +icon(item.icon)
+                            .services__title= item.title
+                            .services__description= item.text
+        .section.portfolio
+            //- img(src="./img/1@x1.png", alt="", srcset="1@x2.png 2x").portfolio__bg
+            .portfolio__particles.particles
+                .particles__front
+                .particles__back
+            .portfolio__text
+                .portfolio__nav
+                    each item in data.portfolio
+                        button.portfolio__categoty(data-filter=`.${item.name}`)= item.name
+                .portfolio__grid
+                    each item in data.portfolio
+                        each img in item.images
+                            .portfolio__item(class=item.name)
+                                img(src=img, alt="").portfolio__img
+        .section.blog
+            //- img(src="./img/1@x1.png", alt="", srcset="1@x2.png 2x").blog__bg
+            .blog__particles.particles
+                .particles__front
+                .particles__back
+            .blog__text
+                .blog__title!= data.blog.title
+                .blog__slider
+                    .blog__swiper.swiper-container
+                        .swiper-wrapper
+                            each item in data.blog.articles
+                                .swiper-slide.blog__slide
+                                    img(src=item, alt="").blog__img
+                        .swiper-pagination
+        .section.contact
+            .contact__text
+                .contact__form
+                    .contact__title= data.contact.title
+                    form(action="", method="get").form
+                        each item in data.contact.form.fields
+                            .form__field
+                                if item.counter
+                                    textarea.input.input--textarea(name=item.name, placeholder=item.placeholder)
+                                    .form__counter!= item.counter
+                                else
+                                    input.input(type=item.name, placeholder=item.placeholder)
+                        .form__field
+                            input(type="file", id=data.contact.form.file.name, name=data.contact.form.file.name)
+                            label(for=data.contact.form.file.name)= data.contact.form.file.placeholder
