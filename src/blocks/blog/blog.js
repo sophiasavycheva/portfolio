@@ -1,5 +1,5 @@
 /**
- * @file Implementation of the about block
+ * @file Implementation of the blog block
  */
 import Swiper from 'swiper';
 // -------------------------- BEGIN MODULE VARIABLES --------------------------
@@ -29,26 +29,17 @@ import Swiper from 'swiper';
 // --------------------------- BEGIN PUBLIC METHODS ---------------------------
 
 /**
- * Initialize the about block.
+ * Initialize the blog block.
  * @return true if the block is present on the page, false otherwise
  */
 export function initBlock() {
     // TODO: add code here
-    new Swiper('.about__swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-
-        // If we need pagination
+    new Swiper('.blog__swiper', {
         pagination: {
             el: '.swiper-pagination',
+            type: 'progressbar',
         },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        }
+        slidesPerView: 2,
     });
     return true;
 }

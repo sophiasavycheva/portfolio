@@ -1,7 +1,8 @@
 /**
- * @file Implementation of the about block
+ * @file Implementation of the portfolio block
  */
-import Swiper from 'swiper';
+
+import Isotope from 'isotope-layout';
 // -------------------------- BEGIN MODULE VARIABLES --------------------------
 
 // TODO: add code here
@@ -29,26 +30,23 @@ import Swiper from 'swiper';
 // --------------------------- BEGIN PUBLIC METHODS ---------------------------
 
 /**
- * Initialize the about block.
+ * Initialize the portfolio block.
  * @return true if the block is present on the page, false otherwise
  */
 export function initBlock() {
     // TODO: add code here
-    new Swiper('.about__swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
+    const $grid = new Isotope('.portfolio__grid', {
+        // options
+        itemSelector: '.portfolio__item',
+        layoutMode: 'fitRows',
+        filter: '.web'
+    });
 
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        }
+    $('.portfolio__nav').on('click', 'button', function() {
+        const filterValue = $(this).attr('data-filter');
+        $grid.arrange({
+            filter: filterValue
+        });
     });
     return true;
 }

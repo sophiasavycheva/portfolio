@@ -36,8 +36,59 @@ block page
                         .swiper-pagination
                         .swiper-button-prev
                         .swiper-button-next
-        .section.services services
-        .section.portfolio portfolio
-        .section.blog blog
-        .section.contact contact
-        
+        .section.services
+            //- img(src="./img/1@x1.png", alt="", srcset="1@x2.png 2x").services__bg
+            .services__particles.particles
+                .particles__front
+                .particles__back
+            .services__text
+                .row
+                    each item in data.services
+                        .col-4
+                            .services__icon
+                                +icon(item.icon)
+                            .services__title= item.title
+                            .services__description= item.text
+        .section.portfolio
+            //- img(src="./img/1@x1.png", alt="", srcset="1@x2.png 2x").portfolio__bg
+            .portfolio__particles.particles
+                .particles__front
+                .particles__back
+            .portfolio__text
+                .portfolio__nav
+                    each item in data.portfolio
+                        button.portfolio__categoty(data-filter=`.${item.name}`)= item.name
+                .portfolio__grid
+                    each item in data.portfolio
+                        each img in item.images
+                            .portfolio__item(class=item.name)
+                                img(src=img, alt="").portfolio__img
+        .section.blog
+            //- img(src="./img/1@x1.png", alt="", srcset="1@x2.png 2x").blog__bg
+            .blog__particles.particles
+                .particles__front
+                .particles__back
+            .blog__text
+                .blog__title!= data.blog.title
+                .blog__slider
+                    .blog__swiper.swiper-container
+                        .swiper-wrapper
+                            each item in data.blog.articles
+                                .swiper-slide.blog__slide
+                                    img(src=item, alt="").blog__img
+                        .swiper-pagination
+        .section.contact
+            .contact__text
+                .contact__form
+                    .contact__title= data.contact.title
+                    form(action="", method="get").form
+                        each item in data.contact.form.fields
+                            .form__field
+                                if item.counter
+                                    textarea.input.input--textarea(name=item.name, placeholder=item.placeholder)
+                                    .form__counter!= item.counter
+                                else
+                                    input.input(type=item.name, placeholder=item.placeholder)
+                        .form__field
+                            input(type="file", id=data.contact.form.file.name, name=data.contact.form.file.name)
+                            label(for=data.contact.form.file.name)= data.contact.form.file.placeholder

@@ -8,6 +8,8 @@ import {
 } from '../../../js/util/index';
 import * as LazyLoader from '../../../js/util/lazy-loader';
 import * as about from '../../about/about';
+import * as portfolio from '../../portfolio/portfolio';
+import * as blog from '../../blog/blog';
 
 // TODO: import other blocks
 
@@ -71,6 +73,8 @@ export function initBlock() {
         }
     });
     about.initBlock();
+    portfolio.initBlock();
+    blog.initBlock();
 
     // Process the initial window size and scroll position
     handleWindowResize();
