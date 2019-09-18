@@ -52,7 +52,7 @@ html {
             0.5px 0.5px 0 #fff; */
     -webkit-text-fill-color: #3A3637;
     /* цвет текста для webkit */
-    -webkit-text-stroke: 0.5px white;
+    -webkit-text-stroke: 5px white;
 }
 
 /* Шрифты*/

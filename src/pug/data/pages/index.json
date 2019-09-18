@@ -1,0 +1,129 @@
+{
+    "siteTitle": "Site Title",
+    "siteTagline": "Site Tagline",
+    "nav": [
+        "Главная",
+        "Обо мне",
+        "Услуги",
+        "Портфолио",
+        "Блог",
+        "Контакты"
+    ],
+    "search": "поиск",
+    "main": {
+        "title": "Готов заказать дизайн, который<br>не только работает, но и радует глаз?",
+        "subtitle": "Знание о вашем деле и мой опыт в UI/UX, позволит создать<br>максимально эффективный сайт",
+        "button": "заказать дизайн"
+    },
+    "about": {
+        "title": "<span>София</span><span>Савичева</span>",
+        "subtitle": "UI/UX дизайнер",
+        "slider": [{
+            "text": "Привлекательность и эффективность дизайна. Считаю, что это два основных понятия не про один из которых не стоит забывать, работая над проектом."
+        }, {
+            "text": "Привлекательность и эффективность дизайна. Считаю, что это два основных понятия не про один из которых не стоит забывать, работая над проектом."
+        }, {
+            "text": "Привлекательность и эффективность дизайна. Считаю, что это два основных понятия не про один из которых не стоит забывать, работая над проектом."
+        }, {
+            "text": "Привлекательность и эффективность дизайна. Считаю, что это два основных понятия не про один из которых не стоит забывать, работая над проектом."
+        }]
+    },
+    "services": [{
+        "icon": "web-design",
+        "title": "Ui/Ux дизайн",
+        "text": "Проектирование интерфейса с привликательным внешним видом и удобным использованием"
+    }, {
+        "icon": "vector",
+        "title": "2D графика",
+        "text": "Разработка фирменного стиля, дизайн полиграфической продукции и широкоформатной печати "
+    }, {
+        "icon": "creativity",
+        "title": "редизайн",
+        "text": ""
+    }],
+    "portfolio": [{
+            "name": "web",
+            "images": [
+                "https://via.placeholder.com/500x450",
+                "https://via.placeholder.com/500x450",
+                "https://via.placeholder.com/500x450",
+                "https://via.placeholder.com/500x450"
+            ]
+        },
+        {
+            "name": "2D",
+            "images": [
+                "https://via.placeholder.com/450x450",
+                "https://via.placeholder.com/450x450",
+                "https://via.placeholder.com/450x450",
+                "https://via.placeholder.com/450x450"
+            ]
+        }
+    ],
+    "blog": {
+        "title": "<strong>ведение блога</strong> - это мой способ следить за трендами и тенденциями в сфере дизайна. Анализируя определенную тему, я формирую собственное мнение, которым делюсь здесь.",
+        "articles": [
+            "https://via.placeholder.com/450x450",
+            "https://via.placeholder.com/450x450",
+            "https://via.placeholder.com/450x450",
+            "https://via.placeholder.com/450x450",
+            "https://via.placeholder.com/450x450"
+        ]
+    },
+    "contact": {
+        "title": "Заполните краткую форму",
+        "form": {
+            "fields": [{
+                "name": "name",
+                "placeholder": "Ваше имя"
+            }, {
+                "name": "email",
+                "placeholder": "Ваш e-mail"
+            }, {
+                "name": "message",
+                "placeholder": "Сообщение",
+                "counter": "<span class='current'>50</span>/<span class='max'>150</span>"
+            }],
+            "file": {
+                "name": "file",
+                "placeholder": "Прикрепить файл",
+                "message": "Допустимые форматы: jpeg, pdf, doc"
+            },
+            "button": "отправить"
+        },
+        "info": [{
+                "icon": "envelope-o",
+                "link": "mailto:sophiasavycheva@gmail.com",
+                "text": "sophiasavycheva@gmail.com"
+            },
+            {
+                "icon": "phone",
+                "link": "tel:+3800005682495",
+                "text": "+380 000 568 24 95"
+            },
+            {
+                "icon": "map",
+                "link": "https://google.com",
+                "text": "Николаев, Украина"
+            }
+        ],
+        "social": [{
+                "name": "facebook-f",
+                "link": "facebook.com"
+            },
+            {
+                "name": "behance",
+                "link": "behance.com"
+            },
+            {
+                "name": "dribbble",
+                "link": "dribbble.com"
+            },
+            {
+                "name": "instagram",
+                "link": "instagram.com"
+            }
+        ],
+        "copy": "Copyright 2019. Sophia Savycheva. All Rights Reserved."
+    }
+}

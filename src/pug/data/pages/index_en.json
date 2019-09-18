@@ -1,0 +1,129 @@
+{
+    "siteTitle": "Site Title",
+    "siteTagline": "Site Tagline",
+    "nav": [
+        "Home",
+        "About",
+        "Services",
+        "Portfolio",
+        "Blog",
+        "Contact"
+    ],
+    "search": "search",
+    "main": {
+        "title": "Ready to order a design that is not only working, but also pleasing to the eye?",
+        "subtitle": "Knowing about your business and my experience in UI / UX will allow me to create <br> the most effective site",
+        "button": "order design"
+    },
+    "about": {
+        "title": "<span> Sofia </span> <span> Savicheva </span>",
+        "subtitle": "UI / UX designer",
+        "slider": [{
+            "text": "The attractiveness and effectiveness of design. I believe that these are two basic concepts not about one of which you should not forget when working on a project."
+        }, {
+            "text": "The attractiveness and effectiveness of design. I believe that these are two basic concepts not about one of which you should not forget when working on a project."
+        }, {
+            "text": "The attractiveness and effectiveness of design. I believe that these are two basic concepts not about one of which you should not forget when working on a project."
+        }, {
+            "text": "The attractiveness and effectiveness of design. I believe that these are two basic concepts not about one of which you should not forget when working on a project."
+        }]
+    },
+    "services": [{
+        "icon": "web-design",
+        "title": "Ui / Ux design",
+        "text": "Designing an interface with an attractive appearance and convenient use"
+    }, {
+        "icon": "vector",
+        "title": "2D graphics",
+        "text": "Corporate identity development, design of printing products and large format printing"
+    }, {
+        "icon": "creativity",
+        "title": "redesign",
+        "text": ""
+    }],
+    "portfolio": [{
+            "name": "web",
+            "images": [
+                "https://via.placeholder.com/500x450",
+                "https://via.placeholder.com/500x450",
+                "https://via.placeholder.com/500x450",
+                "https://via.placeholder.com/500x450"
+            ]
+        },
+        {
+            "name": "2D",
+            "images": [
+                "https://via.placeholder.com/450x450",
+                "https://via.placeholder.com/450x450",
+                "https://via.placeholder.com/450x450",
+                "https://via.placeholder.com/450x450"
+            ]
+        }
+    ],
+    "blog": {
+        "title": "<strong> blogging </strong> is my way of following trends and trends in the field of design. By analyzing a specific topic, I form my own opinion, which I share here.",
+        "articles": [
+            "https://via.placeholder.com/450x450",
+            "https://via.placeholder.com/450x450",
+            "https://via.placeholder.com/450x450",
+            "https://via.placeholder.com/450x450",
+            "https://via.placeholder.com/450x450"
+        ]
+    },
+    "contact": {
+        "title": "Fill out the short form",
+        "form": {
+            "fields": [{
+                "name": "name",
+                "placeholder": "your name"
+            }, {
+                "name": "email",
+                "placeholder": "Your e-mail"
+            }, {
+                "name": "message",
+                "placeholder": "Message",
+                "counter": "<span class = 'current'> 50 </span> / <span class = 'max'> 150 </span>"
+            }],
+            "file": {
+                "name": "file",
+                "placeholder": "Attach file",
+                "message": "Valid formats: jpeg, pdf, doc"
+            },
+            "button": "send"
+        },
+        "info": [{
+                "icon": "envelope-o",
+                "link": "mailto: sophiasavycheva@gmail.com",
+                "text": "sophiasavycheva@gmail.com"
+            },
+            {
+                "icon": "phone",
+                "link": "tel: +3800005682495",
+                "text": "+380 000 568 24 95"
+            },
+            {
+                "icon": "map",
+                "link": "https://google.com",
+                "text": "Nikolaev, Ukraine"
+            }
+        ],
+        "social": [{
+                "name": "facebook-f",
+                "link": "facebook.com"
+            },
+            {
+                "name": "behance",
+                "link": "behance.com"
+            },
+            {
+                "name": "dribbble",
+                "link": "dribbble.com"
+            },
+            {
+                "name": "instagram",
+                "link": "instagram.com"
+            }
+        ],
+        "copy": "Copyright 2019. Sophia Savycheva. All Rights Reserved."
+    }
+}

@@ -1,0 +1,74 @@
+/**
+ * Styles for the about block.
+ */
+.about {
+    max-width: 100%;
+
+    &__text {
+        padding-top: 217px;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 90px;
+        line-height: 90px;
+        /* or 100% */
+
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        padding-left: 350px;
+        padding-right: 50px;
+
+        span:last-child {
+            text-align: right;
+            display: block;
+        }
+    }
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 100px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-left: 635px;
+    }
+
+    &__slider {
+        padding-left: 655px;
+        padding-right: 30px;
+    }
+
+    &__slide {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        /* or 137% */
+
+
+        color: #FFFFFF;
+
+    }
+
+    // Selector styles
+    // TODO: add code
+
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+
+    // BEM modifiers
+    // TODO: add code
+}
